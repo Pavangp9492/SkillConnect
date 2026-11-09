@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-green: #16834A;
+  --dark-green: #105C35;
+  --light-green: #EAF7EF;
+  --bg-color: #F7FAF8;
+  --text-main: #1F2937;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom utility classes */
+.btn-primary {
+  @apply bg-[#16834A] hover:bg-[#105C35] text-white font-medium px-5 py-2.5 rounded-lg transition-colors duration-200 inline-flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#16834A] focus:ring-offset-2;
+}
+
+.btn-secondary {
+  @apply bg-[#EAF7EF] hover:bg-[#D2F0DE] text-[#105C35] font-medium px-5 py-2.5 rounded-lg transition-colors duration-200 inline-flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#16834A] focus:ring-offset-2;
+}
+
+.btn-outline {
+  @apply border border-gray-300 hover:border-[#16834A] hover:bg-[#EAF7EF] text-gray-700 hover:text-[#105C35] font-medium px-5 py-2.5 rounded-lg transition-colors duration-200 inline-flex items-center justify-center gap-2;
+}
+
+.card-base {
+  @apply bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200;
+}
